@@ -11,10 +11,18 @@
 		background-size: cover;
 		margin: 0px 10px;
 	}
+	@include from-320-to-567 {
+		justify-content: flex-start;
+		height: 450px;
+	}
 }
 .header-content-wrap {
 	@include from-320-to-567 {
 		@include flexColCenter;
+	}
+	@include from-320-to-567 {
+		justify-content: flex-start;
+		margin-top: 70px;
 	}
 	h1 {
 		font-size: 72px;
@@ -67,6 +75,9 @@
 		&:hover {
 			color: #19bdf0;
 			cursor: pointer;
+		}
+		@include from-320-to-567 {
+			margin: 10px 0px;
 		}
 	}
 	.scroll-btn-wrap {
