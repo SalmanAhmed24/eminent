@@ -1,0 +1,115 @@
+.services-con {
+	padding: 80px;
+	@include from-320-to-992 {
+		padding: 40px 20px;
+	}
+	.info-con {
+		.servicesSubHead {
+			font-size: 24px;
+			font-weight: 300;
+			text-transform: uppercase;
+			margin: 0px;
+			@include from-320-to-992 {
+				font-size: 20px;
+			}
+			.dash {
+				position: relative;
+				&::before {
+					content: '';
+					width: 50px;
+					height: 2px;
+					background-color: #19bdf0;
+					left: -60px;
+					top: 0px;
+					bottom: 0px;
+					margin: auto auto;
+					position: absolute;
+				}
+			}
+		}
+		.servicesMainHead {
+			font-size: 74px;
+			margin: 0px;
+			line-height: 75px;
+			@include from-320-to-992 {
+				font-size: 34px;
+				line-height: 30px;
+			}
+			span {
+				color: #19bdf0;
+			}
+		}
+		p {
+			font-size: 20px;
+			@include from-320-to-992 {
+				font-size: 14px;
+			}
+		}
+	}
+}
+.services-card-con {
+	margin-top: 80px;
+	@include flexRowSpaceBTW;
+	justify-content: center;
+	flex-wrap: wrap;
+	@include from-320-to-992 {
+		margin-top: 20px;
+	}
+}
+.cards-services {
+	min-width: 250px;
+	max-width: 300px;
+	height: 300px;
+	width: 24%;
+	position: relative;
+	background: #16163c;
+	border-radius: 20px;
+	padding: 0px 20px;
+	@include flexColCenter;
+	margin-bottom: 20px;
+	transition: 0.5s ease-in-out;
+	margin-right: 20px;
+	@include from-320-to-567 {
+		width: 100%;
+		max-width: 100%;
+		margin-right: 0px;
+	}
+	&:hover {
+		cursor: pointer;
+		background: linear-gradient(#7237bd, #19bdf0);
+		.icon-box {
+			top: -10%;
+		}
+	}
+	.icon-box {
+		width: 80px;
+		height: 80px;
+		background-color: #fff;
+		border-radius: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 5%;
+		left: 0px;
+		right: 0px;
+		margin: 0px auto;
+		transition: 0.5s ease-in-out;
+		i {
+			color: #000;
+		}
+	}
+	h1 {
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 0px;
+	}
+	p {
+		text-align: center;
+		font-size: 14px;
+		margin: 0px;
+		margin-top: 5px;
+		line-height: 25px;
+	}
+}

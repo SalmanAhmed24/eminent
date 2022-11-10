@@ -1,0 +1,90 @@
+.testimonials-sec {
+	padding: 80px;
+	@include from-320-to-992 {
+		padding: 40px 20px;
+	}
+	.test-con {
+		.testSubHead {
+			font-size: 24px;
+			font-weight: 300;
+			text-transform: uppercase;
+			margin: 0px;
+			@include from-320-to-992 {
+				font-size: 20px;
+			}
+			.dash {
+				position: relative;
+				&::before {
+					content: '';
+					width: 50px;
+					height: 2px;
+					background-color: #19bdf0;
+					left: -60px;
+					top: 0px;
+					bottom: 0px;
+					margin: auto auto;
+					position: absolute;
+				}
+			}
+		}
+		.testMainHead {
+			font-size: 74px;
+			margin: 0px;
+			line-height: 75px;
+			@include from-320-to-992 {
+				font-size: 34px;
+				line-height: 30px;
+			}
+			span {
+				color: #19bdf0;
+			}
+		}
+		p {
+			font-size: 20px;
+			@include from-320-to-992 {
+				font-size: 14px;
+			}
+		}
+	}
+}
+.test-card-wrap {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 50px;
+	.cards {
+		width: 49%;
+		border-radius: 20px;
+		background: linear-gradient(#19bdf0, #7237bd);
+		padding: 30px 40px;
+		@include from-320-to-992 {
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		@include from-320-to-567 {
+			padding: 20px 15px;
+		}
+		.avatar-wrap {
+			display: flex;
+			flex-wrap: wrap;
+			img {
+				border-radius: 50%;
+			}
+			.avatarInfoWrap {
+				align-self: center;
+				margin-left: 20px;
+				h1 {
+					font-size: 20px;
+					text-transform: capitalize;
+					margin: 0px;
+					font-weight: 600;
+				}
+				p {
+					font-size: 16px;
+					font-weight: 300;
+					margin: 0px;
+				}
+			}
+		}
+	}
+}

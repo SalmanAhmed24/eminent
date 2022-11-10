@@ -1,0 +1,82 @@
+.footer-con {
+	background-color: #191c26;
+	margin-top: 50px;
+	background-image: url(../../public/images/footer-bg.png);
+	background-position: center;
+	background-position: cover;
+	background-repeat: no-repeat;
+	@include from-320-to-567 {
+		margin-top: 0px;
+	}
+	.footerWrap {
+		@include flexColCenter;
+		padding: 50px 50px 20px 50px;
+		position: relative;
+		@include from-320-to-567 {
+			padding: 50px 10px 20px 10px;
+		}
+		h1 {
+			text-align: center;
+			font-size: 52px;
+			margin: 0px;
+			@include from-320-to-992 {
+				font-size: 34px;
+			}
+			span {
+				color: #19bdf0;
+			}
+		}
+		p {
+			font-size: 16px;
+			font-weight: 300;
+			text-align: center;
+			width: 65%;
+			@include from-320-to-992 {
+				width: 95%;
+			}
+			@include from-320-to-567 {
+				font-size: 14px;
+			}
+		}
+		button {
+			@include btnPrimary;
+		}
+	}
+}
+.footer-social {
+	margin-top: 30px;
+	padding: 20px 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-top: 2px solid rgba(255, 255, 255, 0.4);
+	@include from-320-to-567 {
+		flex-wrap: wrap;
+		flex-flow: column-reverse;
+	}
+	p {
+		margin: 0px;
+		font-size: 14px;
+		@include from-320-to-567 {
+			text-align: center;
+			margin-top: 10px;
+		}
+	}
+	.icons-social {
+		width: 120px;
+		display: flex;
+		justify-content: space-between;
+		@include from-320-to-567 {
+			align-self: center;
+		}
+		i {
+			color: #fff;
+			transition: 0.3s ease-in-out;
+			font-size: 25px;
+			&:hover {
+				color: #19bdf0;
+				cursor: pointer;
+			}
+		}
+	}
+}

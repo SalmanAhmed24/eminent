@@ -1,0 +1,107 @@
+.main-header {
+	height: 650px;
+	@include flexColCenter;
+	position: relative;
+	background-image: url(../../public/images/main-header.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 80%;
+	margin: 0px 40px;
+	@include from-320-to-992 {
+		background-size: cover;
+		margin: 0px 10px;
+	}
+}
+.header-content-wrap {
+	@include from-320-to-567 {
+		@include flexColCenter;
+	}
+	h1 {
+		font-size: 72px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin: 0px;
+		text-align: center;
+		line-height: 25px;
+		@include from-567-to-992 {
+			font-size: 42px;
+		}
+		@include from-320-to-567 {
+			font-size: 34px;
+			width: 80%;
+			text-align: center;
+			line-height: 35px;
+			align-self: center;
+		}
+	}
+	p {
+		text-align: center;
+		font-size: 24px;
+		@include from-567-to-992 {
+			font-size: 15px;
+		}
+		@include from-320-to-567 {
+			font-size: 14px;
+			width: 80%;
+		}
+	}
+	.header-btnWrap {
+		text-align: center;
+		button {
+			@include btnPrimary;
+		}
+	}
+}
+.header-socialWrap {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	margin: auto 0px;
+	@include flexColCenter;
+	i {
+		color: #fff;
+		transition: 0.3s ease-in-out;
+		font-size: 25px;
+		margin: 25px 0px;
+		&:hover {
+			color: #19bdf0;
+			cursor: pointer;
+		}
+	}
+	.scroll-btn-wrap {
+		@include flexColCenter;
+		margin-top: 100px;
+		&:hover {
+			cursor: pointer;
+			.arrow-img {
+				position: relative;
+				animation-name: animateScrollBtn;
+				animation-timing-function: ease-in-out;
+				animation-duration: 2s;
+				animation-iteration-count: infinite;
+			}
+		}
+		button {
+			transform: rotate(90deg);
+			background: transparent;
+			border: none;
+			margin-bottom: 40px;
+			font-size: 20px;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}
+@keyframes animateScrollBtn {
+	0% {
+		top: -10px;
+	}
+	50% {
+		top: 10px;
+	}
+	100% {
+		top: -10px;
+	}
+}

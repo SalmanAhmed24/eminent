@@ -1,0 +1,81 @@
+.aboutUs-con {
+	height: 650px;
+	background-image: url(../../public/images/about-us.svg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 50px;
+	@include flexRowCenter;
+	padding: 80px 80px;
+	justify-content: flex-start;
+	@include from-992-to-1300 {
+		height: 750px;
+	}
+	@include from-320-to-992 {
+		padding: 40px 10px;
+	}
+	@include from-320-to-567 {
+		height: 750px;
+	}
+	.about-content-section {
+		width: 50%;
+		@include from-320-to-992 {
+			width: 100%;
+			background: rgba(0, 0, 0, 0.5);
+			backdrop-filter: blur(5px);
+			border-radius: 20px;
+			padding: 20px 30px;
+		}
+		h1 {
+			font-size: 24px;
+			font-weight: 300;
+			text-transform: uppercase;
+			margin: 0px;
+			@include from-320-to-992 {
+				font-size: 20px;
+			}
+			.dash {
+				position: relative;
+				&::before {
+					content: '';
+					width: 50px;
+					height: 2px;
+					background-color: #19bdf0;
+					left: -60px;
+					top: 0px;
+					bottom: 0px;
+					margin: auto auto;
+					position: absolute;
+				}
+			}
+		}
+		h2 {
+			font-size: 74px;
+			margin: 0px;
+			line-height: 75px;
+			@include from-320-to-992 {
+				font-size: 34px;
+				line-height: 30px;
+			}
+			span {
+				color: #19bdf0;
+			}
+		}
+		ul {
+			padding: 0px;
+			margin: 0px;
+			margin-top: 20px;
+			li {
+				font-size: 16px;
+				margin: 20px 0px;
+				@include from-320-to-992 {
+					font-size: 14px;
+				}
+			}
+		}
+		.contact-us-btn {
+			margin-top: 10px;
+			@include btnPrimary;
+		}
+	}
+}

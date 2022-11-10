@@ -1,0 +1,55 @@
+.home-card-wrap {
+	margin-top: 50px;
+	@include flexRowCenter;
+	flex-wrap: wrap;
+	padding: 0px 40px;
+	@include from-320-to-992 {
+		padding: 0px 10px;
+	}
+	@include from-320-to-567 {
+		margin-top: 10px;
+	}
+	.card {
+		min-width: 250px;
+		width: 25%;
+		border-radius: 20px;
+		background: linear-gradient(#7237bd, #7237bd);
+		margin: 20px;
+		padding: 50px 25px;
+		@include flexColCenter;
+		align-items: flex-start;
+		transition: 0.3s ease-in-out;
+		@include from-320-to-992 {
+			width: 100%;
+		}
+		@include from-320-to-567 {
+			padding: 10px;
+			@include flexColCenter;
+		}
+		&:hover {
+			cursor: pointer;
+			background: linear-gradient(#7237bd, #19bdf0);
+		}
+		i {
+			font-size: 45px;
+			color: #fff;
+			height: 55px;
+		}
+		h1 {
+			font-size: 20px;
+			font-weight: bold;
+			min-height: 20px;
+			max-height: 50px;
+			margin: 0px;
+			line-height: 30px;
+		}
+		p {
+			font-size: 14px;
+			font-weight: light;
+			@include from-320-to-567 {
+				text-align: center;
+				font-size: 13px;
+			}
+		}
+	}
+}
