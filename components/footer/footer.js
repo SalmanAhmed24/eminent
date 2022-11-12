@@ -1,22 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import AOS from 'aos';
 function Footer() {
 	const year = new Date().getFullYear();
-	useEffect(() => {
-		AOS.init();
-	});
+
 	return (
-		<footer
-			className="footer-con"
-			data-aos="fade-in"
-			data-aos-offset="-100"
-			data-aos-delay="50"
-			data-aos-duration="1000"
-			data-aos-easing="ease-in-out"
-			data-aos-mirror="true"
-			data-aos-once="false"
-			data-aos-anchor-placement="top-center"
-		>
+		<footer className="footer-con">
 			<section className="footerWrap">
 				<h1>
 					Lets Talk <span>?</span>
