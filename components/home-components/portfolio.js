@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
-import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
+import { motion, useScroll, useTransform } from 'framer-motion';
+
 function Portfolio() {
 	const [ activeTab, setActiveTab ] = useState('All');
+	const { scrollYProgress } = useScroll();
 	const handleTabs = (e) => {
 		setActiveTab(e.target.innerText);
 	};
 	return (
-		<section className="portfolio-sec">
+		<section className="portfolio-sec" id="portfolio">
 			<section className="port-con">
 				<h1 className="portSubHead">
 					<span className="dash" />Portfolio
@@ -29,15 +30,63 @@ function Portfolio() {
 			<div className="circle3" />
 			<section className="portfolio-img-wrap">
 				<div className="port-sec-wrap">
-					<img src="/images/port1.png" />
-					<img src="/images/port3.png" />
-					<img src="/images/port5.png" />
-					<img src="/images/port6.png" />
+					<motion.img
+						initial="hidden"
+						whileInView="visible"
+						variants={{
+							hidden: { opacity: 0, x: -200, transition: { ease: 'easeInOut' } },
+							visible: { opacity: 1, x: 0, transition: { delay: 0.3, ease: 'easeInOut' } }
+						}}
+						src="/images/port1.png"
+					/>
+					<motion.img
+						initial="hidden"
+						whileInView="visible"
+						variants={{
+							hidden: { opacity: 0, x: -200, transition: { ease: 'easeInOut' } },
+							visible: { opacity: 1, x: 0, transition: { delay: 0.3, ease: 'easeInOut' } }
+						}}
+						src="/images/port3.png"
+					/>
+					<motion.img
+						initial="hidden"
+						whileInView="visible"
+						variants={{
+							hidden: { opacity: 0, x: -200, transition: { ease: 'easeInOut' } },
+							visible: { opacity: 1, x: 0, transition: { delay: 0.3, ease: 'easeInOut' } }
+						}}
+						src="/images/port5.png"
+					/>
+					<motion.img src="/images/port6.png" />
 				</div>
 				<div className="port-sec2-wrap">
-					<img src="/images/port2.png" />
-					<img src="/images/port4.png" />
-					<img src="/images/port7.png" />
+					<motion.img
+						initial="hidden"
+						whileInView="visible"
+						variants={{
+							hidden: { opacity: 0, x: 200, transition: { ease: 'easeInOut' } },
+							visible: { opacity: 1, x: 0, transition: { delay: 0.6, ease: 'easeInOut' } }
+						}}
+						src="/images/port2.png"
+					/>
+					<motion.img
+						initial="hidden"
+						whileInView="visible"
+						variants={{
+							hidden: { opacity: 0, x: 200, transition: { ease: 'easeInOut' } },
+							visible: { opacity: 1, x: 0, transition: { delay: 0.6, ease: 'easeInOut' } }
+						}}
+						src="/images/port4.png"
+					/>
+					<motion.img
+						initial="hidden"
+						whileInView="visible"
+						variants={{
+							hidden: { opacity: 0, x: 200, transition: { ease: 'easeInOut' } },
+							visible: { opacity: 1, x: 0, transition: { delay: 0.6, ease: 'easeInOut' } }
+						}}
+						src="/images/port7.png"
+					/>
 				</div>
 			</section>
 		</section>

@@ -1,6 +1,22 @@
+import React, { useState, useEffect } from 'react';
+import AOS from 'aos';
 function AboutUs() {
+	useEffect(() => {
+		AOS.init();
+	});
 	return (
-		<section className="aboutUs-con">
+		<section
+			data-aos="fade-right"
+			data-aos-offset="0"
+			data-aos-delay="50"
+			data-aos-duration="1000"
+			data-aos-easing="ease-in-out"
+			data-aos-mirror="true"
+			data-aos-once="false"
+			data-aos-anchor-placement="top-center"
+			className="aboutUs-con"
+			id="about"
+		>
 			<aside className="about-content-section">
 				<h1>
 					<span className="dash" /> ABOUT US

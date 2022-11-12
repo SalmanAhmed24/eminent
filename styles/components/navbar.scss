@@ -1,5 +1,76 @@
 .navbar {
 	@include flexRowSpaceBTW;
 	margin-bottom: 20px;
+	padding: 25px 40px;
+	.bar {
+		transition: 0.5s ease-in-out;
+		&:hover {
+			cursor: pointer;
+			transform: scaleX(1.15);
+		}
+	}
+}
+.fixedNavbar {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(5px);
+	z-index: 333;
+	animation-name: navbarAnimate;
+	animation-timing-function: ease-in-out;
+	animation-duration: 1s;
+	animation-iteration-count: once;
+}
+.drawer-wrap {
+	width: 100%;
+	background-color: #000;
 	padding: 0px 40px;
+	overflow: hidden;
+	height: 100vh;
+	position: relative;
+	.close-p {
+		width: 100%;
+		text-align: right;
+		font-size: 32px;
+		transition: 0.3s ease-in-out;
+		&:hover {
+			color: #19bdf0;
+			cursor: pointer;
+		}
+	}
+	.drawer-links-wrap {
+		@include flexColCenter;
+		.drawer-links {
+			list-style: none;
+			margin: 0px;
+			li {
+				font-size: 32px;
+				margin-bottom: 20px;
+				transition: 0.3s ease-in-out;
+				&:hover {
+					cursor: pointer;
+					color: #19bdf0;
+				}
+				a {
+					font-size: 32px;
+					margin-bottom: 20px;
+					transition: 0.3s ease-in-out;
+					&:hover {
+						cursor: pointer;
+						color: #19bdf0;
+					}
+				}
+			}
+		}
+	}
+}
+@keyframes navbarAnimate {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }

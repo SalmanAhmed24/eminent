@@ -1,7 +1,22 @@
 import Image from 'next/image';
+import React, { useState, useEffect } from 'react';
+import AOS from 'aos';
 function Testimonials() {
+	useEffect(() => {
+		AOS.init();
+	});
 	return (
-		<main className="testimonials-sec">
+		<main
+			data-aos="fade-in"
+			data-aos-offset="0"
+			data-aos-delay="50"
+			data-aos-duration="1000"
+			data-aos-easing="ease-in-out"
+			data-aos-mirror="true"
+			data-aos-once="false"
+			data-aos-anchor-placement="top-center"
+			className="testimonials-sec"
+		>
 			<section className="test-con">
 				<h1 className="testSubHead">
 					<span className="dash" />Testimonials
