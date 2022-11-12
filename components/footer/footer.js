@@ -9,7 +9,7 @@ function Footer() {
 		<footer
 			className="footer-con"
 			data-aos="fade-in"
-			data-aos-offset="0"
+			data-aos-offset="-100"
 			data-aos-delay="50"
 			data-aos-duration="1000"
 			data-aos-easing="ease-in-out"
