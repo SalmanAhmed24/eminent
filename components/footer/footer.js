@@ -18,11 +18,11 @@ function Footer() {
 			</section>
 			<section className="footer-social">
 				<p>{year} &copy; Copyright made by Salman Ahmed Abbasi </p>
-				<div className="icons-social">
+				{/* <div className="icons-social">
 					<i className="fa-brands fa-facebook-f" />
 					<i className="fa-brands fa-linkedin-in" />
 					<i className="fa-brands fa-square-instagram" />
-				</div>
+				</div> */}
 			</section>
 		</footer>
 	);
