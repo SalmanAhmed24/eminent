@@ -19,7 +19,7 @@ function ServicesCard() {
 				</div>
 				<h1>Project Management</h1>
 				<p>
-					Keep your organization's most strategic projects on time and on budget, to keep your employees
+					Keep your organization&apos;s most strategic projects on time and on budget, to keep your employees
 					learning and focused, and to keep accelerating your project management success no matter what the
 					environment. Our team is experienced in Agile and Waterfall methodologies.
 				</p>
@@ -30,8 +30,8 @@ function ServicesCard() {
 				</div>
 				<h1>Business Process Outsourcing</h1>
 				<p>
-					For any business to thrive, it is important that all it's aspects function at the same pace. More
-					than often, a growing business does not have enough manpower or the resources to do so. Eminent
+					For any business to thrive, it is important that all it&apos;s aspects function at the same pace.
+					More than often, a growing business does not have enough manpower or the resources to do so. Eminent
 					offers the benefit of outsourcing any or multiple functions for your business.
 				</p>
 			</div>
@@ -42,8 +42,8 @@ function ServicesCard() {
 				<h1>Software & Website Development</h1>
 				<p>
 					We create Software specifically for your needs. We handle every step of the development process,
-					from product concept and coding to testing, deployment, and support. Eminent's Software Development
-					team is here to meet your business requirements.
+					from product concept and coding to testing, deployment, and support. Eminent&apos;s Software
+					Development team is here to meet your business requirements.
 				</p>
 			</div>
 		</section>
