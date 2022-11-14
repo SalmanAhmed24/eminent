@@ -51,7 +51,7 @@ function HomeHeader() {
 				</section>
 			</main>
 			<section className="header-socialWrap">
-				<a target="_blank" href="https://www.facebook.com/eminentconsultingandservices">
+				<a target="_blank" rel="noreferrer" href="https://www.facebook.com/eminentconsultingandservices">
 					<motion.img
 						initial="hidden"
 						animate="visible"
@@ -62,7 +62,11 @@ function HomeHeader() {
 						src="./images/facebook.png"
 					/>
 				</a>
-				<a href="https://www.linkedin.com/company/eminent-consulting-and-services/" target={'_blank'}>
+				<a
+					rel="noreferrer"
+					href="https://www.linkedin.com/company/eminent-consulting-and-services/"
+					target={'_blank'}
+				>
 					<motion.img
 						initial="hidden"
 						animate="visible"
@@ -73,7 +77,7 @@ function HomeHeader() {
 						src="./images/linkedin.png"
 					/>
 				</a>
-				<a href="https://www.instagram.com/eminentconsultingandservices/" target={'_blank'}>
+				<a rel="noreferrer" href="https://www.instagram.com/eminentconsultingandservices/" target={'_blank'}>
 					<motion.img
 						initial="hidden"
 						animate="visible"
