@@ -81,6 +81,10 @@
 	.scroll-btn-wrap {
 		@include flexColCenter;
 		margin-top: 100px;
+		.arrow-img {
+			position: relative;
+			top: -40px;
+		}
 		&:hover {
 			cursor: pointer;
 			.arrow-img {
@@ -105,12 +109,12 @@
 }
 @keyframes animateScrollBtn {
 	0% {
-		top: -10px;
+		top: -40px;
 	}
 	50% {
-		top: 10px;
+		top: -20px;
 	}
 	100% {
-		top: -10px;
+		top: -40px;
 	}
 }
