@@ -59,7 +59,8 @@
 .cards-services {
 	min-width: 250px;
 	max-width: 300px;
-	height: 300px;
+	height: 450px;
+	min-width: 300px;
 	width: 24%;
 	position: relative;
 	background: #16163c;
@@ -73,12 +74,17 @@
 		width: 100%;
 		max-width: 100%;
 		margin-right: 0px;
+		height: 350px;
 	}
 	&:hover {
 		cursor: pointer;
 		background: linear-gradient(#7237bd, #19bdf0);
 		.icon-box {
 			top: -10%;
+			@include from-320-to-567 {
+				position: relative;
+				top: 0px;
+			}
 		}
 	}
 	.icon-box {
@@ -96,14 +102,18 @@
 		right: 0px;
 		margin: 0px auto;
 		transition: 0.5s ease-in-out;
-		i {
-			color: #000;
+		@include from-320-to-567 {
+			position: relative;
+			top: 0px;
 		}
 	}
 	h1 {
 		text-align: center;
 		margin-top: 50px;
 		margin-bottom: 0px;
+		@include from-320-to-567 {
+			margin-top: 5px;
+		}
 	}
 	p {
 		text-align: center;

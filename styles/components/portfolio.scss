@@ -130,6 +130,9 @@
 .portfolio-img-wrap {
 	display: flex;
 	flex-wrap: wrap;
+	margin-top: 20px;
+	z-index: 22;
+	position: relative;
 	.port-sec-wrap {
 		width: 49%;
 		display: flex;

@@ -16,15 +16,14 @@ function Portfolio() {
 				<h1 className="portMainHead">
 					Our Latest Project<span className="dot">.</span>
 				</h1>
-				<p>Let us help you develop the perfect brand strategy from scratch</p>
 			</section>
-			<ul onClick={handleTabs} className="tab-con">
+			{/* <ul onClick={handleTabs} className="tab-con">
 				<li className={activeTab == 'All' ? 'activeTab' : ''}>All</li>
 				<li className={activeTab == 'UIUX Design' ? 'activeTab' : ''}>UIUX Design</li>
 				<li className={activeTab == 'Development' ? 'activeTab' : ''}>Development</li>
 				<li className={activeTab == 'Visual Design' ? 'activeTab' : ''}>Visual Design</li>
 				<li className={activeTab == 'Brands Identity' ? 'activeTab' : ''}>Brands Identity</li>
-			</ul>
+			</ul> */}
 			<div className="circle1" />
 			<div className="circle2" />
 			<div className="circle3" />

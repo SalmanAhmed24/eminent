@@ -1,4 +1,5 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
+import Image from 'next/image';
 function HomeCards() {
 	const { scrollYProgress } = useScroll();
 	return (
@@ -12,14 +13,9 @@ function HomeCards() {
 				}}
 				className="card"
 			>
-				<i className="fa-solid fa-magnifying-glass" />
-				<h1>Identify The Objectives</h1>
-				<p>
-					It is a long established fact that a reader will be distracted by the readable content of a page
-					when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-					distribution of letters, as opposed to using &apos;Content here, content here&apos;, making it look
-					like readable English.
-				</p>
+				<Image src={'/images/vision.png'} alt="Vision" width={70} height={70} />
+				<h1>Our Vision</h1>
+				<p>Serve our client&apos;s changing business needs and make them Future-Ready, Now</p>
 			</motion.div>
 			<motion.div
 				initial="hidden"
@@ -30,13 +26,10 @@ function HomeCards() {
 				}}
 				className="card"
 			>
-				<i className="fa-solid fa-user-tie" />
-				<h1>Create Useful Personas</h1>
+				<Image src={'/images/mission.png'} alt="Mission" width={70} height={70} />
+				<h1>Our Mission</h1>
 				<p>
-					It is a long established fact that a reader will be distracted by the readable content of a page
-					when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-					distribution of letters, as opposed to using &apos;Content here, content here&apos;, making it look
-					like readable English.
+					{`At Eminent, our mission is to provide A->Z consulting services so you can focus on your core business while we do the rest for you.`}
 				</p>
 			</motion.div>
 			<motion.div
@@ -48,50 +41,9 @@ function HomeCards() {
 				}}
 				className="card"
 			>
-				<i className="fa-solid fa-comments-dollar" />
-				<h1>Set The Budget</h1>
-				<p>
-					It is a long established fact that a reader will be distracted by the readable content of a page
-					when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-					distribution of letters, as opposed to using &apos;Content here, content here&apos;, making it look
-					like readable English.
-				</p>
-			</motion.div>
-			<motion.div
-				initial="hidden"
-				whileInView="visible"
-				variants={{
-					hidden: { opacity: 0, y: 200, transition: { ease: 'easeInOut' } },
-					visible: { opacity: 1, y: 0, transition: { delay: 0.6, ease: 'easeInOut' } }
-				}}
-				className="card"
-			>
-				<i className="fa-solid fa-brain" />
-				<h1>Make A Plan</h1>
-				<p>
-					It is a long established fact that a reader will be distracted by the readable content of a page
-					when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-					distribution of letters, as opposed to using &apos;Content here, content here&apos;, making it look
-					like readable English.
-				</p>
-			</motion.div>
-			<motion.div
-				initial="hidden"
-				whileInView="visible"
-				variants={{
-					hidden: { opacity: 0, y: 200, transition: { ease: 'easeInOut' } },
-					visible: { opacity: 1, y: 0, transition: { delay: 0.6, ease: 'easeInOut' } }
-				}}
-				className="card"
-			>
-				<i className="fa-solid fa-arrow-trend-up" />
-				<h1>Plan Evaluation</h1>
-				<p>
-					It is a long established fact that a reader will be distracted by the readable content of a page
-					when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-					distribution of letters, as opposed to using &apos;Content here, content here&apos;, making it look
-					like readable English.
-				</p>
+				<Image src={'/images/solution.png'} alt="Solution" width={70} height={70} />
+				<h1>Our Solution</h1>
+				<p>Eminent Consulting & Services</p>
 			</motion.div>
 		</section>
 	);

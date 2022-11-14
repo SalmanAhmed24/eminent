@@ -24,24 +24,27 @@ function Testimonials() {
 				<h1 className="testMainHead">
 					What Clients Say<span className="dot">.</span>
 				</h1>
-				<p>Let us help you develop the perfect brand strategy from scratch</p>
 			</section>
 			<section className="test-card-wrap">
 				<div className="cards">
 					<div className="avatar-wrap">
 						<Image src="/images/avatar.jpg" width={80} height={80} />
 						<div className="avatarInfoWrap">
-							<h1>Client One</h1>
-							<p>Designer</p>
+							<h1>MS Malik & Co</h1>
+							<p>Tax Consultant</p>
 						</div>
 						<p>
-							In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
-							demonstrate the visual form of a document or a typeface without relying on meaningful
-							content. Lorem ipsum may be used as a placeholder before final copy is available.
+							Highlight of the story is that I wasn&apos;t generating leads for my startup at all. If you
+							are running a business or startup, social media marketing is very important in order to
+							generate leads/profits and that&apos;s what Eminent did for me. Their content writing,
+							posting, color schemes, marketing campaigns and above all professionalism is really worth
+							appreciating. On average I am getting ten to fifteen leads per day from the last two months.
+							So, I would highly recommend Eminent for consultation and services. Keep Rocking Guys!!
+							Muhammad Saad.
 						</p>
 					</div>
 				</div>
-				<div className="cards">
+				{/* <div className="cards">
 					<div className="avatar-wrap">
 						<Image src="/images/avatar.jpg" width={80} height={80} />
 						<div className="avatarInfoWrap">
@@ -54,7 +57,7 @@ function Testimonials() {
 							content. Lorem ipsum may be used as a placeholder before final copy is available.
 						</p>
 					</div>
-				</div>
+				</div> */}
 			</section>
 		</main>
 	);

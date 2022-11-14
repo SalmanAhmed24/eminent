@@ -106,14 +106,24 @@ function ContactPage() {
 					<Image src="/images/placeholder.png" width={70} height={70} alt="Location" />
 					<p>ARL Residential Estate, Morgah Rawalpindi</p>
 				</div>
-				<div className="card-phone">
-					<Image src="/images/telephone.png" width={70} height={70} alt="Phone" />
-					<p>Pakistan +92-3165407849</p>
-				</div>
-				<div className="card-phone">
-					<Image src="/images/telephone.png" width={70} height={70} alt="Phone" />
-					<p>USA +1(857)7722573</p>
-				</div>
+				<a href="tel:+923165407849">
+					<div className="card-phone">
+						<Image src="/images/telephone.png" width={70} height={70} alt="Phone" />
+						<p>Pakistan +92 (316) 540-7849</p>
+					</div>
+				</a>
+				<a href="tel:+18577722573">
+					<div className="card-phone">
+						<Image src="/images/telephone.png" width={70} height={70} alt="Phone" />
+						<p>USA +1 (857) 772-2573</p>
+					</div>
+				</a>
+				<a href="mailTo:support@eminentconsultingandservices.com">
+					<div className="card-phone">
+						<Image src="/images/email.png" width={70} height={70} alt="Phone" />
+						<p>support@eminentconsultingandservices.com</p>
+					</div>
+				</a>
 			</section>
 		</section>
 	);

@@ -46,6 +46,7 @@
 		p {
 			font-size: 14px;
 			font-weight: light;
+			height: 100px;
 			@include from-320-to-567 {
 				text-align: center;
 				font-size: 13px;

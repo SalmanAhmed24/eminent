@@ -25,7 +25,6 @@ function Services() {
 				<h1 className="servicesMainHead">
 					We Do Everything<span className="dot">.</span>
 				</h1>
-				<p>Let us help you develop the perfect brand strategy from scratch</p>
 			</section>
 			<ServicesCard />
 		</main>

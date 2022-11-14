@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 function Footer() {
 	const year = new Date().getFullYear();
-
+	const router = useRouter();
 	return (
 		<footer className="footer-con">
 			<section className="footerWrap">
@@ -13,7 +14,7 @@ function Footer() {
 					business while we do the rest for you.`}
 				</p>
 
-				<button>Contact Us</button>
+				<button onClick={() => router.push('/contact')}>Contact Us</button>
 			</section>
 			<section className="footer-social">
 				<p>{year} &copy; Copyright made by Salman Ahmed Abbasi </p>

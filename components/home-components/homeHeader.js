@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-
+import { useRouter } from 'next/router';
 function HomeHeader() {
+	const router = useRouter();
 	return (
 		<header className="main-header">
 			<main className="header-wrap">
@@ -14,7 +15,17 @@ function HomeHeader() {
 							visible: { opacity: 1, x: 0, transition: { delay: 1.03, ease: 'easeInOut' } }
 						}}
 					>
-						Digital Agency
+						Eminent Consulting
+					</motion.h1>
+					<motion.h1
+						initial="hidden"
+						animate="visible"
+						variants={{
+							hidden: { opacity: 0, x: 0, transition: { ease: 'easeInOut' } },
+							visible: { opacity: 1, x: 0, transition: { delay: 1.03, ease: 'easeInOut' } }
+						}}
+					>
+						& SERVICES
 					</motion.h1>
 					<motion.p
 						initial="hidden"
@@ -24,7 +35,7 @@ function HomeHeader() {
 							visible: { opacity: 1, y: 0, transition: { delay: 1.045, ease: 'easeInOut' } }
 						}}
 					>
-						Let&apos;s build your future together with Eminent.
+						Let&apos;s build YOUR future together!
 					</motion.p>
 					<motion.div
 						initial="hidden"
@@ -35,37 +46,37 @@ function HomeHeader() {
 						}}
 						className="header-btnWrap"
 					>
-						<button>Contact Us</button>
+						<button onClick={() => router.push('/contact')}>Contact Us</button>
 					</motion.div>
 				</section>
 			</main>
 			<section className="header-socialWrap">
-				<motion.i
+				<motion.img
 					initial="hidden"
 					animate="visible"
 					variants={{
 						hidden: { opacity: 0, x: -100, transition: { ease: 'easeInOut' } },
 						visible: { opacity: 1, x: 0, transition: { delay: 1.1, ease: 'easeInOut' } }
 					}}
-					className="fa-brands fa-facebook-f"
+					src="./images/facebook.png"
 				/>
-				<motion.i
+				<motion.img
 					initial="hidden"
 					animate="visible"
 					variants={{
 						hidden: { opacity: 0, x: -100, transition: { ease: 'easeInOut' } },
 						visible: { opacity: 1, x: 0, transition: { delay: 1.3, ease: 'easeInOut' } }
 					}}
-					className="fa-brands fa-linkedin-in"
+					src="./images/linkedIn.png"
 				/>
-				<motion.i
+				<motion.img
 					initial="hidden"
 					animate="visible"
 					variants={{
 						hidden: { opacity: 0, x: -100, transition: { ease: 'easeInOut' } },
 						visible: { opacity: 1, x: 0, transition: { delay: 1.5, ease: 'easeInOut' } }
 					}}
-					className="fa-brands fa-square-instagram"
+					src="./images/instagram.png"
 				/>
 				<motion.div
 					initial="hidden"

@@ -1,7 +1,9 @@
 import Drawer from '@mui/material/Drawer';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 function MenuDrawer({ openFlag, drawerHandler }) {
+	const router = useRouter();
 	return (
 		<Drawer
 			PaperProps={{
@@ -24,13 +26,25 @@ function MenuDrawer({ openFlag, drawerHandler }) {
 							</Link>
 						</li>
 						<li onClick={drawerHandler}>
-							<a href="#service">Services</a>
+							{router.asPath == '/contact' ? (
+								<Link href={'/#about'}>About Us</Link>
+							) : (
+								<a href="#about">About Us</a>
+							)}
 						</li>
 						<li onClick={drawerHandler}>
-							<a href="#about">About Us</a>
+							{router.asPath == '/contact' ? (
+								<Link href={'/#service'}>Services</Link>
+							) : (
+								<a href="#service">Services</a>
+							)}
 						</li>
 						<li onClick={drawerHandler}>
-							<a href="#portfolio">Portfolio</a>
+							{router.asPath == '/contact' ? (
+								<Link href={'/#portfolio'}>Portfolio</Link>
+							) : (
+								<a href="#portfolio">Portfolio</a>
+							)}
 						</li>
 						<li>
 							<Link onClick={drawerHandler} href={'/contact'}>

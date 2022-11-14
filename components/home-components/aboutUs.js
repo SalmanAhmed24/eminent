@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
+import { useRouter } from 'next/router';
 function AboutUs() {
 	useEffect(() => {
 		AOS.init();
 	});
+	const router = useRouter();
 	return (
 		<section
 			data-aos="fade-right"
@@ -38,7 +40,9 @@ function AboutUs() {
 						expert panel will help you achieve your goals in the most efficient and cost-effective manner.
 					</li>
 				</ul>
-				<button className="contact-us-btn">Contact Us</button>
+				<button className="contact-us-btn" onClick={() => router.push('/contact')}>
+					Contact Us
+				</button>
 			</aside>
 		</section>
 	);
