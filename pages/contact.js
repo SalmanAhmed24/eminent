@@ -5,11 +5,10 @@ import { motion } from 'framer-motion';
 
 function ContactPage() {
 	const options = [
-		{ value: 'Digital Marketing', label: 'Digital Marketing' },
-		{ value: 'Website Development', label: 'Website Development' },
-		{ value: 'Software Development', label: 'Software Development' },
-		{ value: 'BPO', label: 'BPO' },
-		{ value: 'Project Management', label: 'Project Management' }
+		{ value: 'Digital Marketing Solutions', label: 'Digital Marketing Solutions' },
+		{ value: 'Project Management', label: 'Project Management' },
+		{ value: 'Business Process Outsourcing', label: 'Business Process Outsourcing' },
+		{ value: 'Software & Website Development', label: 'Software & Website Development' }
 	];
 	const [ name, setName ] = useState('');
 	const [ email, setEmail ] = useState('');
