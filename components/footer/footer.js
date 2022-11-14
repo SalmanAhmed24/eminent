@@ -5,17 +5,26 @@ function Footer() {
 	const router = useRouter();
 	return (
 		<footer className="footer-con">
-			<section className="footerWrap">
-				<h1>
-					Lets Talk <span>?</span>
-				</h1>
-				<p>
-					{`At Eminent, our mission is to provide A->Z consulting services so you can focus on your core
+			{router.asPath == '/contact' ? null : (
+				<section className="footerWrap">
+					<h1>
+						Lets Talk <span>?</span>
+					</h1>
+					<p>
+						{`At Eminent, our mission is to provide A->Z consulting services so you can focus on your core
 					business while we do the rest for you.`}
-				</p>
+					</p>
 
-				<button onClick={() => router.push('/contact')}>Contact Us</button>
-			</section>
+					<button onClick={() => router.push('/contact')}>Contact Us</button>
+				</section>
+			)}
+			{router.asPath == '/privacy' ? null : (
+				<section className="privacy-p">
+					<p>
+						Visit Our <span onClick={() => router.push('/privacy')}>Privacy Policy</span> for more details.
+					</p>
+				</section>
+			)}
 			<section className="footer-social">
 				<p>{year} &copy; Copyright made by Salman Ahmed Abbasi </p>
 				{/* <div className="icons-social">

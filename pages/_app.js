@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
 		<div>
 			<Navbar />
 			<Component {...pageProps} />
-			{router.asPath == '/contact' ? null : <Footer />}
+			<Footer />
 		</div>
 	);
 }

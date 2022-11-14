@@ -80,3 +80,15 @@
 		}
 	}
 }
+.privacy-p {
+	text-align: center;
+	padding-top: 20px;
+	span {
+		font-weight: bold;
+		transition: 0.3s ease-in-out;
+		&:hover {
+			cursor: pointer;
+			color: #19bdf0;
+		}
+	}
+}
