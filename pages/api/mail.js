@@ -1,5 +1,4 @@
 export default function(req, res) {
-	console.log(req.body);
 	var nodemailer = require('nodemailer');
 	var transporter = nodemailer.createTransport({
 		host: 'smtp.hostinger.com',
