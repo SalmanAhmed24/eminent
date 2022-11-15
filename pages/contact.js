@@ -2,6 +2,7 @@ import Select from 'react-select';
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import axios from 'axios';
 
 function ContactPage() {
 	const options = [
@@ -20,7 +21,21 @@ function ContactPage() {
 	const handlePhone = (e) => setPhone(e.target.value);
 	const handlerServices = (e) => setService(e.value);
 	const handlerMessage = (e) => setMsg(e.target.value);
-
+	const handleSub = (e) => {
+		e.preventDefault();
+		const data = {
+			name,
+			email,
+			phone,
+			service,
+			message: msg
+		};
+		console.log(data);
+		axios
+			.post('https://eminentconsultingandservices.com/api/mail', data)
+			.then((res) => console.log(res))
+			.catch((error) => console.log(error));
+	};
 	const colourStyles = {
 		control: (styles) => ({ ...styles, backgroundColor: '#fff' }),
 		option: (styles, { data, isDisabled, isFocused, isSelected }) => {
@@ -60,9 +75,10 @@ function ContactPage() {
 				>
 					Feel Free to contact us for any of the services we offer.
 				</motion.p>
-				<motion.section
+				<motion.form
 					initial="hidden"
 					animate="visible"
+					onSubmit={handleSub}
 					variants={{
 						hidden: { opacity: 0, y: 0, transition: { ease: 'easeInOut' } },
 						visible: { opacity: 1, y: 0, transition: { delay: 1.06, ease: 'easeInOut' } }
@@ -96,9 +112,9 @@ function ContactPage() {
 						<textarea onChange={handlerMessage} cols="30" rows="10" className="message" />
 					</div>
 					<div className="sub-btn-wrap">
-						<button>Submit</button>
+						<button type={'submit'}>Submit</button>
 					</div>
-				</motion.section>
+				</motion.form>
 			</header>
 			<section className="phone-con">
 				<div className="card-phone">
