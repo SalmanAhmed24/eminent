@@ -13,8 +13,8 @@ function runMiddleware(req, res, fn) {
 		});
 	});
 }
-export default function(req, res) {
-	runMiddleware(req, res, cors);
+const handler = async (req, res) => {
+	await runMiddleware(req, res, cors);
 	var nodemailer = require('nodemailer');
 	var transporter = nodemailer.createTransport({
 		host: 'smtp.hostinger.com',
@@ -38,4 +38,5 @@ export default function(req, res) {
 			res.json({ status: 'OK' });
 		}
 	});
-}
+};
+export default handler;
