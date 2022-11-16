@@ -36,7 +36,7 @@ function Portfolio() {
 							hidden: { opacity: 0, x: -200, transition: { ease: 'easeInOut' } },
 							visible: { opacity: 1, x: 0, transition: { delay: 0.3, ease: 'easeInOut' } }
 						}}
-						src="/images/port1.png"
+						src="/images/img-1.jpeg"
 					/>
 					<motion.img
 						initial="hidden"
@@ -45,7 +45,7 @@ function Portfolio() {
 							hidden: { opacity: 0, x: -200, transition: { ease: 'easeInOut' } },
 							visible: { opacity: 1, x: 0, transition: { delay: 0.3, ease: 'easeInOut' } }
 						}}
-						src="/images/port3.png"
+						src="/images/img-3.jpeg"
 					/>
 					<motion.img
 						initial="hidden"
@@ -54,9 +54,9 @@ function Portfolio() {
 							hidden: { opacity: 0, x: -200, transition: { ease: 'easeInOut' } },
 							visible: { opacity: 1, x: 0, transition: { delay: 0.3, ease: 'easeInOut' } }
 						}}
-						src="/images/port5.png"
+						src="/images/img-4.png"
 					/>
-					<motion.img src="/images/port6.png" />
+					<motion.img src="/images/img-7.png" />
 				</div>
 				<div className="port-sec2-wrap">
 					<motion.img
@@ -66,7 +66,7 @@ function Portfolio() {
 							hidden: { opacity: 0, x: 200, transition: { ease: 'easeInOut' } },
 							visible: { opacity: 1, x: 0, transition: { delay: 0.6, ease: 'easeInOut' } }
 						}}
-						src="/images/port2.png"
+						src="/images/img-2.jpeg"
 					/>
 					<motion.img
 						initial="hidden"
@@ -75,7 +75,7 @@ function Portfolio() {
 							hidden: { opacity: 0, x: 200, transition: { ease: 'easeInOut' } },
 							visible: { opacity: 1, x: 0, transition: { delay: 0.6, ease: 'easeInOut' } }
 						}}
-						src="/images/port4.png"
+						src="/images/img-5.png"
 					/>
 					<motion.img
 						initial="hidden"
@@ -84,7 +84,7 @@ function Portfolio() {
 							hidden: { opacity: 0, x: 200, transition: { ease: 'easeInOut' } },
 							visible: { opacity: 1, x: 0, transition: { delay: 0.6, ease: 'easeInOut' } }
 						}}
-						src="/images/port7.png"
+						src="/images/img-6.png"
 					/>
 				</div>
 			</section>

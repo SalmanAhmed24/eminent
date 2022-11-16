@@ -32,7 +32,7 @@ function ContactPage() {
 		};
 		console.log(data);
 		axios
-			.post('https://www.eminentconsultingandservices.com/api/mail', data)
+			.post('http://localhost:3000/api/mail', data)
 			.then((res) => console.log(res))
 			.catch((error) => console.log(error));
 	};
