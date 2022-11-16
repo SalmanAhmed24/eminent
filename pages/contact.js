@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import axios from 'axios';
-
+import Head from 'next/head';
 function ContactPage() {
 	const options = [
 		{ value: 'Digital Marketing Solutions', label: 'Digital Marketing Solutions' },
@@ -32,7 +32,7 @@ function ContactPage() {
 		};
 		console.log(data);
 		axios
-			.post('https://eminentconsultingandservices.com/api/mail', data)
+			.post('https://www.eminentconsultingandservices.com/api/mail', data)
 			.then((res) => console.log(res))
 			.catch((error) => console.log(error));
 	};
@@ -54,6 +54,11 @@ function ContactPage() {
 	};
 	return (
 		<section>
+			<Head>
+				<title>Eminent | Contact</title>
+				<meta name="description" content="Contact Us Form" />
+				<link rel="icon" href="/images/cropped-favicon-eminent-32x32.png" />
+			</Head>
 			<header className="contact-con">
 				<motion.h1
 					initial="hidden"
