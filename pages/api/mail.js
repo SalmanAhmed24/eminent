@@ -1,20 +1,4 @@
-import Cors from 'cors';
-const cors = Cors({
-	methods: [ 'POST', 'HEAD' ]
-});
-function runMiddleware(req, res, fn) {
-	return new Promise((resolve, reject) => {
-		console.log('here in middleware');
-		fn(req, res, (result) => {
-			if (result instanceof Error) {
-				return reject(result);
-			}
-			return resolve(result);
-		});
-	});
-}
 const handler = async (req, res) => {
-	await runMiddleware(req, res, cors);
 	var nodemailer = require('nodemailer');
 	var transporter = nodemailer.createTransport({
 		host: 'smtp.hostinger.com',
