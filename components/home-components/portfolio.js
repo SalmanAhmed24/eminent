@@ -32,76 +32,36 @@ function Portfolio() {
 			<div className="circle2" />
 			<div className="circle3" />
 			<section className="portfolio-img-wrap">
-				<div className="port-sec-wrap">
-					<img
-						data-aos="fade-right"
-						data-aos-offset="0"
-						data-aos-delay="30"
-						data-aos-duration="500"
-						data-aos-easing="ease-in-out"
-						data-aos-mirror="true"
-						data-aos-once="false"
-						data-aos-anchor-placement="top-center"
-						src="/images/img-1.jpeg"
-					/>
-					<img
-						data-aos="fade-right"
-						data-aos-offset="0"
-						data-aos-delay="30"
-						data-aos-duration="500"
-						data-aos-easing="ease-in-out"
-						data-aos-mirror="true"
-						data-aos-once="false"
-						data-aos-anchor-placement="top-center"
-						src="/images/img-3.jpeg"
-					/>
-					<img
-						data-aos="fade-right"
-						data-aos-offset="0"
-						data-aos-delay="30"
-						data-aos-duration="500"
-						data-aos-easing="ease-in-out"
-						data-aos-mirror="true"
-						data-aos-once="false"
-						data-aos-anchor-placement="top-center"
-						src="/images/port-4.png"
-					/>
+				<div
+					className="port-sec-wrap"
+					data-aos="fade-right"
+					data-aos-offset="0"
+					data-aos-delay="30"
+					data-aos-duration="500"
+					data-aos-easing="ease-in-out"
+					data-aos-mirror="true"
+					data-aos-once="false"
+					data-aos-anchor-placement="top-center"
+				>
+					<img src="/images/img-1.jpeg" />
+					<img src="/images/img-3.jpeg" />
+					<img src="/images/port-4.png" />
 					<img src="/images/img-7.png" />
 				</div>
-				<div className="port-sec2-wrap">
-					<img
-						data-aos="fade-left"
-						data-aos-offset="0"
-						data-aos-delay="30"
-						data-aos-duration="500"
-						data-aos-easing="ease-in-out"
-						data-aos-mirror="true"
-						data-aos-once="false"
-						data-aos-anchor-placement="top-center"
-						src="/images/img-2.jpeg"
-					/>
-					<img
-						data-aos="fade-left"
-						data-aos-offset="0"
-						data-aos-delay="30"
-						data-aos-duration="500"
-						data-aos-easing="ease-in-out"
-						data-aos-mirror="true"
-						data-aos-once="false"
-						data-aos-anchor-placement="top-center"
-						src="/images/img-5.png"
-					/>
-					<img
-						data-aos="fade-left"
-						data-aos-offset="0"
-						data-aos-delay="30"
-						data-aos-duration="500"
-						data-aos-easing="ease-in-out"
-						data-aos-mirror="true"
-						data-aos-once="false"
-						data-aos-anchor-placement="top-center"
-						src="/images/img-6.png"
-					/>
+				<div
+					data-aos="fade-left"
+					data-aos-offset="0"
+					data-aos-delay="30"
+					data-aos-duration="500"
+					data-aos-easing="ease-in-out"
+					data-aos-mirror="true"
+					data-aos-once="false"
+					data-aos-anchor-placement="top-center"
+					className="port-sec2-wrap"
+				>
+					<img src="/images/img-2.jpeg" />
+					<img src="/images/img-5.png" />
+					<img src="/images/img-6.png" />
 				</div>
 			</section>
 		</section>

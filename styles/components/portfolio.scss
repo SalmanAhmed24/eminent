@@ -152,10 +152,12 @@
 		flex-direction: column;
 		justify-content: stretch;
 		img {
+			width: 100%;
 			padding: 10px;
 			align-self: stretch;
 			@include from-320-to-567 {
 				padding: 3px;
+				width: auto;
 			}
 		}
 	}
