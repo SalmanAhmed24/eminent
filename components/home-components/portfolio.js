@@ -64,36 +64,42 @@ function Portfolio() {
 						data-aos-mirror="true"
 						data-aos-once="false"
 						data-aos-anchor-placement="top-center"
-						src="/images/img-4.png"
+						src="/images/port-4.png"
 					/>
 					<img src="/images/img-7.png" />
 				</div>
 				<div className="port-sec2-wrap">
-					<motion.img
-						initial="hidden"
-						whileInView="visible"
-						variants={{
-							hidden: { opacity: 0, x: 200, transition: { ease: 'easeInOut' } },
-							visible: { opacity: 1, x: 0, transition: { delay: 0.6, ease: 'easeInOut' } }
-						}}
+					<img
+						data-aos="fade-left"
+						data-aos-offset="0"
+						data-aos-delay="30"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
+						data-aos-anchor-placement="top-center"
 						src="/images/img-2.jpeg"
 					/>
-					<motion.img
-						initial="hidden"
-						whileInView="visible"
-						variants={{
-							hidden: { opacity: 0, x: 200, transition: { ease: 'easeInOut' } },
-							visible: { opacity: 1, x: 0, transition: { delay: 0.6, ease: 'easeInOut' } }
-						}}
+					<img
+						data-aos="fade-left"
+						data-aos-offset="0"
+						data-aos-delay="30"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
+						data-aos-anchor-placement="top-center"
 						src="/images/img-5.png"
 					/>
-					<motion.img
-						initial="hidden"
-						whileInView="visible"
-						variants={{
-							hidden: { opacity: 0, x: 200, transition: { ease: 'easeInOut' } },
-							visible: { opacity: 1, x: 0, transition: { delay: 0.6, ease: 'easeInOut' } }
-						}}
+					<img
+						data-aos="fade-left"
+						data-aos-offset="0"
+						data-aos-delay="30"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
+						data-aos-anchor-placement="top-center"
 						src="/images/img-6.png"
 					/>
 				</div>
