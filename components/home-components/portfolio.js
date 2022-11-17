@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import AOS from 'aos';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 function Portfolio() {
+	useEffect(() => {
+		AOS.init();
+	});
 	const [ activeTab, setActiveTab ] = useState('All');
 	const { scrollYProgress } = useScroll();
 	const handleTabs = (e) => {
@@ -29,34 +33,40 @@ function Portfolio() {
 			<div className="circle3" />
 			<section className="portfolio-img-wrap">
 				<div className="port-sec-wrap">
-					<motion.img
-						initial="hidden"
-						whileInView="visible"
-						variants={{
-							hidden: { opacity: 0, x: -200, transition: { ease: 'easeInOut' } },
-							visible: { opacity: 1, x: 0, transition: { delay: 0.3, ease: 'easeInOut' } }
-						}}
+					<img
+						data-aos="fade-right"
+						data-aos-offset="0"
+						data-aos-delay="30"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
+						data-aos-anchor-placement="top-center"
 						src="/images/img-1.jpeg"
 					/>
-					<motion.img
-						initial="hidden"
-						whileInView="visible"
-						variants={{
-							hidden: { opacity: 0, x: -200, transition: { ease: 'easeInOut' } },
-							visible: { opacity: 1, x: 0, transition: { delay: 0.3, ease: 'easeInOut' } }
-						}}
+					<img
+						data-aos="fade-right"
+						data-aos-offset="0"
+						data-aos-delay="30"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
+						data-aos-anchor-placement="top-center"
 						src="/images/img-3.jpeg"
 					/>
-					<motion.img
-						initial="hidden"
-						whileInView="visible"
-						variants={{
-							hidden: { opacity: 0, x: -200, transition: { ease: 'easeInOut' } },
-							visible: { opacity: 1, x: 0, transition: { delay: 0.3, ease: 'easeInOut' } }
-						}}
+					<img
+						data-aos="fade-right"
+						data-aos-offset="0"
+						data-aos-delay="30"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
+						data-aos-anchor-placement="top-center"
 						src="/images/img-4.png"
 					/>
-					<motion.img src="/images/img-7.png" />
+					<img src="/images/img-7.png" />
 				</div>
 				<div className="port-sec2-wrap">
 					<motion.img
