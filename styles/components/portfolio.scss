@@ -153,8 +153,11 @@
 			width: 100%;
 			padding: 10px;
 			@include from-320-to-567 {
+				&:first-child {
+					height: 250px;
+				}
 				padding: 3px;
-				height: 50%;
+				height: 100px;
 				width: auto;
 			}
 		}
