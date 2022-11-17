@@ -12,7 +12,7 @@ function HomeHeader() {
 						animate="visible"
 						variants={{
 							hidden: { opacity: 0, x: 0, transition: { ease: 'easeInOut' } },
-							visible: { opacity: 1, x: 0, transition: { delay: 1.03, ease: 'easeInOut' } }
+							visible: { opacity: 1, x: 0, transition: { delay: 0.5, ease: 'easeInOut' } }
 						}}
 					>
 						Eminent Consulting
@@ -22,7 +22,7 @@ function HomeHeader() {
 						animate="visible"
 						variants={{
 							hidden: { opacity: 0, x: 0, transition: { ease: 'easeInOut' } },
-							visible: { opacity: 1, x: 0, transition: { delay: 1.03, ease: 'easeInOut' } }
+							visible: { opacity: 1, x: 0, transition: { delay: 0.5, ease: 'easeInOut' } }
 						}}
 					>
 						& SERVICES
@@ -32,7 +32,7 @@ function HomeHeader() {
 						animate="visible"
 						variants={{
 							hidden: { opacity: 0, y: 100, transition: { ease: 'easeInOut' } },
-							visible: { opacity: 1, y: 0, transition: { delay: 1.045, ease: 'easeInOut' } }
+							visible: { opacity: 1, y: 0, transition: { delay: 0.6, ease: 'easeInOut' } }
 						}}
 					>
 						Let&apos;s build YOUR future together!
@@ -42,7 +42,7 @@ function HomeHeader() {
 						animate="visible"
 						variants={{
 							hidden: { opacity: 0, x: 100, transition: { ease: 'easeInOut' } },
-							visible: { opacity: 1, x: 0, transition: { delay: 1.05, ease: 'easeInOut' } }
+							visible: { opacity: 1, x: 0, transition: { delay: 0.6, ease: 'easeInOut' } }
 						}}
 						className="header-btnWrap"
 					>
@@ -57,7 +57,7 @@ function HomeHeader() {
 						animate="visible"
 						variants={{
 							hidden: { opacity: 0, x: -100, transition: { ease: 'easeInOut' } },
-							visible: { opacity: 1, x: 0, transition: { delay: 1.1, ease: 'easeInOut' } }
+							visible: { opacity: 1, x: 0, transition: { delay: 0.7, ease: 'easeInOut' } }
 						}}
 						src="./images/facebook.png"
 					/>
@@ -72,7 +72,7 @@ function HomeHeader() {
 						animate="visible"
 						variants={{
 							hidden: { opacity: 0, x: -100, transition: { ease: 'easeInOut' } },
-							visible: { opacity: 1, x: 0, transition: { delay: 1.3, ease: 'easeInOut' } }
+							visible: { opacity: 1, x: 0, transition: { delay: 0.9, ease: 'easeInOut' } }
 						}}
 						src="./images/linkedin.png"
 					/>
@@ -83,7 +83,7 @@ function HomeHeader() {
 						animate="visible"
 						variants={{
 							hidden: { opacity: 0, x: -100, transition: { ease: 'easeInOut' } },
-							visible: { opacity: 1, x: 0, transition: { delay: 1.5, ease: 'easeInOut' } }
+							visible: { opacity: 1, x: 0, transition: { delay: 1, ease: 'easeInOut' } }
 						}}
 						src="./images/instagram.png"
 					/>
@@ -93,7 +93,7 @@ function HomeHeader() {
 					animate="visible"
 					variants={{
 						hidden: { opacity: 0, y: -100, transition: { ease: 'easeInOut' } },
-						visible: { opacity: 1, y: 0, transition: { delay: 1.7, ease: 'easeInOut' } }
+						visible: { opacity: 1, y: 0, transition: { delay: 1.2, ease: 'easeInOut' } }
 					}}
 					className="scroll-btn-wrap"
 				>
