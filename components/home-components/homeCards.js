@@ -15,7 +15,7 @@ function HomeCards() {
 			>
 				<Image src={'/images/vision.png'} alt="Vision" width={70} height={70} />
 				<h1>Our Vision</h1>
-				<p>Serve our client&apos;s changing business needs and make them Future-Ready, Now</p>
+				<p>Serve our clients&apos; changing business needs and make them Future-Ready, Now</p>
 			</motion.div>
 			<motion.div
 				initial="hidden"

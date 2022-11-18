@@ -18,7 +18,7 @@ function Portfolio() {
 					<span className="dash" />Portfolio
 				</h1>
 				<h1 className="portMainHead">
-					Our Latest Project<span className="dot">.</span>
+					Our Latest Projects<span className="dot">.</span>
 				</h1>
 			</section>
 			{/* <ul onClick={handleTabs} className="tab-con">
