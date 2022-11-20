@@ -7,7 +7,7 @@ function Services() {
 	});
 	return (
 		<main
-			data-aos="fade-left"
+			data-aos="fade-in"
 			data-aos-offset="0"
 			data-aos-delay="50"
 			data-aos-duration="500"
