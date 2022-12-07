@@ -3,12 +3,12 @@ const handler = async (req, res) => {
 	var transporter = nodemailer.createTransport({
 		host: 'smtp.hostinger.com',
 		port: 465,
-		auth: { user: 'support@eminentconsultingandservices.com', pass: 'Eminent@654321' },
+		auth: { user: 'info@eminentconsultingandservices.com', pass: 'Eminent@654321' },
 		secure: true
 	});
 	var mailOptions = {
-		from: 'support@eminentconsultingandservices.com',
-		to: 'support@eminentconsultingandservices.com',
+		from: 'info@eminentconsultingandservices.com',
+		to: 'info@eminentconsultingandservices.com',
 		subject: 'Contact Form Submitted from website',
 		html: `<h3>Name:</h3><p>${req.body.name}</p><h3>Email:</h3><p>${req.body.email}</p><h3>Phone:</h3><p>${req.body
 			.phone}</p><h3>Service:</h3><p>${req.body.service}</p><h3>Message:</h3><p>${req.body.message}</p>`
