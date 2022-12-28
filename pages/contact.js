@@ -126,10 +126,10 @@ function ContactPage() {
 					<Image src="/images/placeholder.png" width={70} height={70} alt="Location" />
 					<p>ARL Residential Estate, Morgah Rawalpindi</p>
 				</div>
-				<a href="tel:+923165407849">
+				<a href="tel:+923150204448">
 					<div className="card-phone">
 						<Image src="/images/telephone.png" width={70} height={70} alt="Phone" />
-						<p>Pakistan +92 (316) 540-7849</p>
+						<p>Pakistan +92 (315) 0204448</p>
 					</div>
 				</a>
 				<a href="tel:+18577722573">
