@@ -29,7 +29,7 @@ function Navbar() {
 			}}
 			className={scrollPosition < 100 ? 'navbar' : 'navbar fixedNavbar'}
 		>
-			<Image src="/images/logo.png" width={150} height={45} alt="Eminent" />
+			<Image src="/images/logo-new.png" width={150} height={45} alt="Eminent" />
 			<Image className="bar" onClick={toggleDrawer} src="/images/bar.png" width={40} height={30} alt="Menu" />
 			<MenuDrawer openFlag={drawerFlag} drawerHandler={toggleDrawer} />
 		</motion.nav>
