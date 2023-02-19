@@ -11,10 +11,10 @@ import Testimonials from '../components/home-components/testimonials';
 export default function Home() {
 	return (
 		<div className="home-con">
-			<Script src="https://kit.fontawesome.com/d13d7ebb7d.js" crossOrigin="anonymous" async />
+			<Script  id="script-for-fontawesome" src="https://kit.fontawesome.com/d13d7ebb7d.js" crossOrigin="anonymous" async />
 				{/* for google */}
-				<Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=G-SCGZTWCNTC`} />
-            <Script strategy="lazyOnload">
+				<Script id="google-analytics" strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=G-SCGZTWCNTC`} />
+            <Script id="script-for-analytics" strategy="lazyOnload">
                 {`
                     window.dataLayer = window.dataLayer || [];
 					function gtag(){dataLayer.push(arguments)}
